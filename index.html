@@ -6,87 +6,189 @@
     <title>H.P. Ishini Uthkarsha Gunathilaka | E-Portfolio</title>
     <style>
         :root {
-            --primary-color: #2c5e3b;
-            --secondary-color: #f4f9f4;
-            --accent-color: #4CAF50;
-            --text-color: #333333;
-            --white: #ffffff;
+            --primary: #1b4332;
+            --secondary: #2d6a4f;
+            --accent: #52b788;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #212529;
+            --text-muted: #6c757d;
         }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--secondary-color);
+
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        /* Header / Hero Section */
         header {
-            background: linear-gradient(135deg, #2c5e3b, #1e3f26);
-            color: var(--white);
-            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #ffffff;
             text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
+
         header h1 {
-            margin: 0 0 10px 0;
-            font-size: 2.5rem;
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
+
         header p {
-            font-size: 1.1rem;
-            margin: 5px 0;
-            opacity: 0.9;
+            font-size: 1.15rem;
+            opacity: 0.95;
+            margin-bottom: 6px;
         }
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-        section {
-            background: var(--white);
-            margin-bottom: 25px;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid #e2e2e2;
-            padding-bottom: 8px;
-            margin-top: 0;
-            font-size: 1.5rem;
-        }
-        .profile-img {
-            width: 160px;
-            height: 190px;
-            border-radius: 8px;
-            object-fit: cover;
-            display: block;
-            margin: 0 auto 20px auto;
-            border: 3px solid var(--primary-color);
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .resume-btn {
+
+        header em {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 4px 12px;
+            border-radius: 20px;
             display: inline-block;
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        /* Container Layout */
+        .container {
+            max-width: 950px;
+            margin: -30px auto 40px auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        /* Cards / Sections */
+        section {
+            background: var(--card-bg);
+            margin-bottom: 25px;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+            border-top: 4px solid var(--accent);
+            transition: transform 0.2s ease;
+        }
+
+        section:hover {
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #edf2f4;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            color: var(--secondary);
+            font-size: 1.1rem;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        /* Profile Image */
+        .profile-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 170px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: #495057;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 10px;
+            color: #495057;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent);
             font-weight: bold;
-            transition: background 0.3s;
+            font-size: 1.3rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
         }
+
+        /* Contact & Info Grid styling */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        /* Button */
+        .resume-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--secondary);
+            color: #ffffff;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(45, 106, 79, 0.2);
+            transition: all 0.3s ease;
+        }
+
         .resume-btn:hover {
-            background-color: #1e3f26;
+            background-color: var(--primary);
+            box-shadow: 0 6px 15px rgba(27, 67, 50, 0.3);
+            transform: translateY(-1px);
         }
+
+        /* Footer */
         footer {
             text-align: center;
-            padding: 20px;
-            color: #666;
+            padding: 30px;
+            color: var(--text-muted);
             font-size: 0.9rem;
+            background-color: #ffffff;
+            border-top: 1px solid #dee2e6;
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -102,7 +204,9 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <img src="profile.jpg" alt="H.P. Ishini Uthkarsha Gunathilaka" class="profile-img">
+            <div class="profile-container">
+                <img src="photo%20of%20mine.jpg" alt="H.P. Ishini Uthkarsha Gunathilaka" class="profile-img">
+            </div>
             <p>Hi, I’m H.P. Ishini Uthkarsha Gunathilaka. I am a first-year undergraduate following a BSc (Hons) in Biotechnology at the Sri Lanka Institute of Information Technology (SLIIT).</p>
             <p>I completed my secondary education at Kuliyapitiya Central College. I have a strong interest in Biology and Chemistry, and I am particularly interested in Molecular Biology and its applications in biotechnology and scientific research.</p>
             <p>As part of my undergraduate studies, I have participated in Biology and Chemistry laboratory practicals and prepared practical reports based on my experimental work. These experiences have helped me develop my basic laboratory skills, scientific thinking, and understanding of experimental procedures.</p>
@@ -112,10 +216,9 @@
         <section id="education">
             <h2>Educational Qualifications</h2>
             <h3>Higher Education</h3>
-            <p><strong>Sri Lanka Institute of Information Technology (SLIIT)</strong></p>
-            <p>BSc (Hons) in Biotechnology — Year 1, Semester 1</p>
+            <p><strong>Sri Lanka Institute of Information Technology (SLIIT)</strong><br>BSc (Hons) in Biotechnology — Year 1, Semester 1</p>
             
-            <h3>Secondary Education</h3>
+            <h3 style="margin-top: 20px;">Secondary Education</h3>
             <p><strong>Kuliyapitiya Central College</strong></p>
             <ul>
                 <li><strong>G.C.E. Advanced Level (Bio Stream):</strong> Biology (C), Chemistry (C), Physics (C) [Year 2025]</li>
@@ -173,7 +276,7 @@
         <section id="resume">
             <h2>Resume</h2>
             <p>For more information about my educational qualifications, skills, and experience, please refer to my professional CV below:</p>
-            <p><a href="HS26510354_CV.pdf" target="_blank" class="resume-btn">📥 Download My PDF Resume</a></p>
+            <p style="margin-top: 15px;"><a href="HS26510354_CV.pdf" target="_blank" class="resume-btn">📥 Download My PDF Resume</a></p>
         </section>
 
         <section id="contact">
@@ -182,7 +285,7 @@
             <p><strong>Address:</strong> Ketawalegedara- Wewagama, Kuliyapitiya, Sri Lanka</p>
             <p><strong>Phone:</strong> +94 76 7766930</p>
             <p><strong>Email:</strong> ishinigunathilaka2006@gmail.com</p>
-            <p><strong>GitHub Portfolio:</strong> <a href="https://HS26510354.github.io/">https://HS26510354.github.io/</a></p>
+            <p><strong>GitHub Portfolio:</strong> <a href="https://HS26510354.github.io/" target="_blank">https://HS26510354.github.io/</a></p>
         </section>
 
     </div>
