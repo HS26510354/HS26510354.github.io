@@ -39,25 +39,28 @@
 
         header h1 {
             font-size: 2.4rem;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             font-weight: 700;
-            letter-spacing: -0.5px;
+            color: #ffffff;
         }
 
         header p {
             font-size: 1.15rem;
-            opacity: 0.95;
-            margin-bottom: 6px;
+            color: #e9ecef;
+            margin-bottom: 8px;
+            font-weight: 500;
         }
 
         header em {
             font-size: 0.95rem;
-            opacity: 0.8;
-            background: rgba(255, 255, 255, 0.15);
-            padding: 4px 12px;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 16px;
             border-radius: 20px;
             display: inline-block;
             margin-top: 5px;
+            font-style: normal;
+            font-weight: 600;
         }
 
         /* Container Layout */
@@ -76,11 +79,6 @@
             border-radius: 12px;
             box-shadow: 0 6px 20px rgba(0,0,0,0.04);
             border-top: 4px solid var(--accent);
-            transition: transform 0.2s ease;
-        }
-
-        section:hover {
-            transform: translateY(-2px);
         }
 
         h2 {
@@ -89,9 +87,6 @@
             margin-bottom: 20px;
             padding-bottom: 10px;
             border-bottom: 2px solid #edf2f4;
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
 
         h3 {
@@ -144,18 +139,9 @@
             top: -2px;
         }
 
-        /* Contact & Info Grid styling */
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-
         /* Button */
         .resume-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
+            display: inline-block;
             background-color: var(--secondary);
             color: #ffffff;
             padding: 12px 28px;
@@ -169,7 +155,6 @@
         .resume-btn:hover {
             background-color: var(--primary);
             box-shadow: 0 6px 15px rgba(27, 67, 50, 0.3);
-            transform: translateY(-1px);
         }
 
         /* Footer */
@@ -205,7 +190,7 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="profile-container">
-                <img src="photo%20of%20mine.jpg" alt="H.P. Ishini Uthkarsha Gunathilaka" class="profile-img">
+                <img src="photo of mine.jpg" alt="H.P. Ishini Uthkarsha Gunathilaka" class="profile-img">
             </div>
             <p>Hi, I’m H.P. Ishini Uthkarsha Gunathilaka. I am a first-year undergraduate following a BSc (Hons) in Biotechnology at the Sri Lanka Institute of Information Technology (SLIIT).</p>
             <p>I completed my secondary education at Kuliyapitiya Central College. I have a strong interest in Biology and Chemistry, and I am particularly interested in Molecular Biology and its applications in biotechnology and scientific research.</p>
