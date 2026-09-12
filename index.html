@@ -1,283 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H.P. Ishini Uthkarsha Gunathilaka | E-Portfolio</title>
-    <style>
-        :root {
-            --primary: #1b4332;
-            --secondary: #2d6a4f;
-            --accent: #52b788;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --text-main: #212529;
-            --text-muted: #6c757d;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.7;
-        }
-
-        /* Header / Hero Section */
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: #ffffff;
-            text-align: center;
-            padding: 60px 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
-            font-size: 2.4rem;
-            margin-bottom: 12px;
-            font-weight: 700;
-            color: #ffffff;
-        }
-
-        header p {
-            font-size: 1.15rem;
-            color: #e9ecef;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-
-        header em {
-            font-size: 0.95rem;
-            color: #ffffff;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 6px 16px;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 5px;
-            font-style: normal;
-            font-weight: 600;
-        }
-
-        /* Container Layout */
-        .container {
-            max-width: 950px;
-            margin: -30px auto 40px auto;
-            padding: 0 20px;
-            position: relative;
-        }
-
-        /* Cards / Sections */
-        section {
-            background: var(--card-bg);
-            margin-bottom: 25px;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.04);
-            border-top: 4px solid var(--accent);
-        }
-
-        h2 {
-            color: var(--primary);
-            font-size: 1.4rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #edf2f4;
-        }
-
-        h3 {
-            color: var(--secondary);
-            font-size: 1.1rem;
-            margin-top: 15px;
-            margin-bottom: 5px;
-        }
-
-        /* Profile Image */
-        .profile-container {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .profile-img {
-            width: 170px;
-            height: 200px;
-            border-radius: 10px;
-            object-fit: cover;
-            border: 4px solid var(--accent);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        }
-
-        p {
-            margin-bottom: 12px;
-            color: #495057;
-        }
-
-        /* Lists */
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        li {
-            position: relative;
-            padding-left: 22px;
-            margin-bottom: 10px;
-            color: #495057;
-        }
-
-        li::before {
-            content: "•";
-            color: var(--accent);
-            font-weight: bold;
-            font-size: 1.3rem;
-            position: absolute;
-            left: 0;
-            top: -2px;
-        }
-
-        /* Button */
-        .resume-btn {
-            display: inline-block;
-            background-color: var(--secondary);
-            color: #ffffff;
-            padding: 12px 28px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            box-shadow: 0 4px 10px rgba(45, 106, 79, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .resume-btn:hover {
-            background-color: var(--primary);
-            box-shadow: 0 6px 15px rgba(27, 67, 50, 0.3);
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            background-color: #ffffff;
-            border-top: 1px solid #dee2e6;
-        }
-
-        a {
-            color: var(--secondary);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ishini Gunathilaka | Biotechnology Undergraduate</title>
+<meta name="description" content="e-Portfolio of H.P. Ishini Uthkarsha Gunathilaka, Biotechnology Undergraduate at SLIIT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>H.P. Ishini Uthkarsha Gunathilaka</h1>
-        <p>Biotechnology Undergraduate | Aspiring Molecular Biology Professional</p>
-        <p><em>BSc (Hons) Biotechnology | SLIIT</em></p>
-    </header>
+<div class="strand" aria-hidden="true"></div>
 
-    <div class="container">
+<header class="nav-wrap">
+  <nav class="nav">
+    <a href="#top" class="nav-brand">IG<span class="dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#practicals">Practicals</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="profile-container">
-                <img src="photo of mine.jpg" alt="H.P. Ishini Uthkarsha Gunathilaka" class="profile-img">
-            </div>
-            <p>Hi, I’m H.P. Ishini Uthkarsha Gunathilaka. I am a first-year undergraduate following a BSc (Hons) in Biotechnology at the Sri Lanka Institute of Information Technology (SLIIT).</p>
-            <p>I completed my secondary education at Kuliyapitiya Central College. I have a strong interest in Biology and Chemistry, and I am particularly interested in Molecular Biology and its applications in biotechnology and scientific research.</p>
-            <p>As part of my undergraduate studies, I have participated in Biology and Chemistry laboratory practicals and prepared practical reports based on my experimental work. These experiences have helped me develop my basic laboratory skills, scientific thinking, and understanding of experimental procedures.</p>
-            <p>Enthusiastic and detail-oriented, I am seeking opportunities to gain practical experience as a Trainee Laboratory Assistant while contributing to accurate laboratory operations.</p>
-        </section>
+<main id="top">
 
-        <section id="education">
-            <h2>Educational Qualifications</h2>
-            <h3>Higher Education</h3>
-            <p><strong>Sri Lanka Institute of Information Technology (SLIIT)</strong><br>BSc (Hons) in Biotechnology — Year 1, Semester 1</p>
-            
-            <h3 style="margin-top: 20px;">Secondary Education</h3>
-            <p><strong>Kuliyapitiya Central College</strong></p>
-            <ul>
-                <li><strong>G.C.E. Advanced Level (Bio Stream):</strong> Biology (C), Chemistry (C), Physics (C) [Year 2025]</li>
-                <li><strong>G.C.E. Ordinary Level:</strong> Passed with 9 distinctions (A) passes [Year 2023]</li>
-            </ul>
-        </section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-kicker">Biotechnology Undergraduate · SLIIT</p>
+      <h1>H.P. Ishini Uthkarsha <br>Gunathilaka</h1>
+      <p class="hero-lede">First-year Biotechnology undergraduate building a foundation in molecular biology, laboratory practice and scientific research — one experiment at a time.</p>
+      <div class="hero-actions">
+        <a href="assets/Ishini_Gunathilaka_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <img src="assets/profile.jpg" alt="Portrait of Ishini Gunathilaka">
+      </div>
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+    </div>
+  </section>
 
-        <section id="skills">
-            <h2>Technical & Laboratory Skills 🧪</h2>
-            <ul>
-                <li>Basic Autoclave Operation</li>
-                <li>Spectrophotometry</li>
-                <li>Micropipetting</li>
-                <li>Laboratory Safety Practices: SOP Compliance and Biosafety (BSL-1/BSL-2)</li>
-                <li>Preparation of Solutions & Titration Techniques</li>
-                <li>Experimental Data Recording & Basic Data Analysis</li>
-                <li>Scientific Practical Report Writing</li>
-            </ul>
-        </section>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <span class="tag tag-teal">01</span>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text">
+        Hi, I'm H.P. Ishini Uthkarsha Gunathilaka, a first-year undergraduate following a
+        <strong>BSc (Hons) in Biotechnology</strong> at the Sri Lanka Institute of Information
+        Technology (SLIIT). I completed my secondary education at Kuliyapitiya Central College,
+        where a strong interest in Biology and Chemistry grew into a specific curiosity about
+        <strong>molecular biology</strong> and its applications in scientific research.
+      </p>
+      <p class="about-text">
+        Through my Biology and Chemistry laboratory practicals, I've prepared practical reports,
+        recorded experimental data and started building the habits of careful, methodical lab work.
+        I'm currently developing skills in micropipetting, spectrophotometry, titration and
+        scientific report writing — and I'm looking forward to deepening all of it as my degree progresses.
+      </p>
+      <ul class="about-facts">
+        <li><span>Currently</span> Year 1, Semester 1 — BSc (Hons) Biotechnology</li>
+        <li><span>Interested in</span> Molecular Biology &amp; Biotechnology Research</li>
+        <li><span>Based in</span> Kuliyapitiya, Sri Lanka</li>
+      </ul>
+    </div>
+  </section>
 
-        <section id="computer-skills">
-            <h2>Computer & Software Skills 💻</h2>
-            <ul>
-                <li>Microsoft Word, Excel, PowerPoint</li>
-                <li>Basic Data Entry and Data Formatting</li>
-                <li>Preparing Presentations & Academic Documents</li>
-            </ul>
-        </section>
+  <!-- EDUCATION -->
+  <section id="education" class="section section-alt">
+    <div class="section-head">
+      <span class="tag tag-amber">02</span>
+      <h2>Educational Qualifications</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">Currently Following</p>
+          <h3>BSc (Hons) in Biotechnology</h3>
+          <p class="timeline-org">Sri Lanka Institute of Information Technology (SLIIT)</p>
+          <ul>
+            <li>Biology and Chemistry laboratory practicals</li>
+            <li>Scientific practical report writing</li>
+            <li>Experimental observation and data recording</li>
+            <li>Basic laboratory techniques and biotechnology theory</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">2025</p>
+          <h3>G.C.E. Advanced Level — Biological Science Stream</h3>
+          <p class="timeline-org">Kuliyapitiya Central College</p>
+          <div class="grade-row">
+            <span class="grade">Biology — C</span>
+            <span class="grade">Chemistry — C</span>
+            <span class="grade">Physics — C</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">2023</p>
+          <h3>G.C.E. Ordinary Level</h3>
+          <p class="timeline-org">Kuliyapitiya Central College</p>
+          <div class="grade-row">
+            <span class="grade grade-highlight">9 A passes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="interests">
-            <h2>Areas of Interest 🔬</h2>
-            <p><strong>Molecular Biology:</strong> Interested in understanding how genes, DNA, RNA, proteins, and biological molecules work and control life processes.</p>
-            <p><strong>Biotechnology Research:</strong> Exploring applications in healthcare, agriculture, food production, and environmental science.</p>
-        </section>
-
-        <section id="activities">
-            <h2>Extracurricular Activities & Soft Skills</h2>
-            <ul>
-                <li>Member of University Biotech Club</li>
-                <li>Member of University Carom Club</li>
-                <li><strong>Soft Skills:</strong> Project Management, Public Relations, Teamwork, Critical Thinking, Problem Solving, Time Management</li>
-                <li><strong>Languages:</strong> Sinhala (Native), English (Professional)</li>
-            </ul>
-        </section>
-
-        <section id="hobbies">
-            <h2>Hobbies & Interests 📚✈️</h2>
-            <ul>
-                <li>Reading books and scientific literature</li>
-                <li>Travelling and exploring new environments</li>
-                <li>Continuous learning and skill development</li>
-            </ul>
-        </section>
-
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>For more information about my educational qualifications, skills, and experience, please refer to my professional CV below:</p>
-            <p style="margin-top: 15px;"><a href="HS26510354_CV.pdf" target="_blank" class="resume-btn">📥 Download My PDF Resume</a></p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Details 📧</h2>
-            <p><strong>Name:</strong> H.P. Ishini Uthkarsha Gunathilaka</p>
-            <p><strong>Address:</strong> Ketawalegedara- Wewagama, Kuliyapitiya, Sri Lanka</p>
-            <p><strong>Phone:</strong> +94 76 7766930</p>
-            <p><strong>Email:</strong> ishinigunathilaka2006@gmail.com</p>
-            <p><strong>GitHub Portfolio:</strong> <a href="https://HS26510354.github.io/" target="_blank">https://HS26510354.github.io/</a></p>
-        </section>
-
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-head">
+      <span class="tag tag-coral">03</span>
+      <h2>Laboratory &amp; Technical Skills</h2>
     </div>
 
-    <footer>
-        <p>&copy; 2026 H.P. Ishini Uthkarsha Gunathilaka. All rights reserved.</p>
-    </footer>
+    <h3 class="group-title">Laboratory Skills</h3>
+    <div class="chip-row">
+      <span class="chip chip-teal">Basic Micropipetting</span>
+      <span class="chip chip-teal">Spectrophotometry</span>
+      <span class="chip chip-teal">Titration Techniques</span>
+      <span class="chip chip-teal">Preparation of Solutions</span>
+      <span class="chip chip-teal">Accurate Measurement</span>
+      <span class="chip chip-teal">Basic Autoclave Operation</span>
+      <span class="chip chip-teal">Laboratory Equipment Handling</span>
+      <span class="chip chip-teal">Experimental Data Recording</span>
+      <span class="chip chip-teal">Laboratory Safety Practices</span>
+      <span class="chip chip-teal">Scientific Report Writing</span>
+    </div>
 
+    <h3 class="group-title">Computer &amp; Scientific Skills</h3>
+    <div class="chip-row">
+      <span class="chip chip-amber">Microsoft Word</span>
+      <span class="chip chip-amber">Microsoft Excel</span>
+      <span class="chip chip-amber">Microsoft PowerPoint</span>
+      <span class="chip chip-amber">Basic Data Entry &amp; Formatting</span>
+      <span class="chip chip-amber">Online Research</span>
+      <span class="chip chip-amber">Basic Data Analysis</span>
+    </div>
+
+    <h3 class="group-title">Soft Skills</h3>
+    <div class="chip-row">
+      <span class="chip chip-violet">Communication</span>
+      <span class="chip chip-violet">Teamwork</span>
+      <span class="chip chip-violet">Time Management</span>
+      <span class="chip chip-violet">Problem Solving</span>
+      <span class="chip chip-violet">Critical Thinking</span>
+      <span class="chip chip-violet">Attention to Detail</span>
+      <span class="chip chip-violet">Adaptability</span>
+    </div>
+  </section>
+
+  <!-- PRACTICALS / PROJECTS -->
+  <section id="practicals" class="section section-alt">
+    <div class="section-head">
+      <span class="tag tag-teal">04</span>
+      <h2>Academic Practical Experience</h2>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <p class="card-icon">🧬</p>
+        <h3>Biology Laboratory Practicals</h3>
+        <p>Participated in Biology practical sessions connecting theory to hands-on experiments, recording observations and analysing results as part of first-year coursework.</p>
+      </article>
+      <article class="card">
+        <p class="card-icon">⚗️</p>
+        <h3>Chemistry Laboratory Practicals</h3>
+        <p>Completed Chemistry practicals covering accurate measurement, solution preparation, titration techniques and calculation-based experimental work.</p>
+      </article>
+      <article class="card">
+        <p class="card-icon">📝</p>
+        <h3>Scientific Report Writing</h3>
+        <p>Prepared practical reports presenting experimental procedures, observations, results, discussions and conclusions in a clear scientific format.</p>
+      </article>
+      <article class="card">
+        <p class="card-icon">🎤</p>
+        <h3>Group Academic Presentations</h3>
+        <p>Took part in group presentations related to Biology and Biotechnology, building teamwork, research and presentation skills along the way.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- AREAS OF INTEREST -->
+  <section id="interests" class="section">
+    <div class="section-head">
+      <span class="tag tag-amber">05</span>
+      <h2>Areas of Interest</h2>
+    </div>
+    <div class="interest-grid">
+      <div class="interest-card interest-teal">
+        <h3>Molecular Biology</h3>
+        <p>Understanding how genes, DNA, RNA and proteins work together to control biological processes — and building practical experience in molecular techniques as my degree progresses.</p>
+      </div>
+      <div class="interest-card interest-coral">
+        <h3>Biotechnology</h3>
+        <p>Exploring how biotechnology applies to healthcare, agriculture, food production, environmental science and scientific research more broadly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section id="hobbies" class="section section-alt">
+    <div class="section-head">
+      <span class="tag tag-coral">06</span>
+      <h2>Hobbies</h2>
+    </div>
+    <div class="hobby-row">
+      <div class="hobby">
+        <p class="hobby-icon">📚</p>
+        <h3>Reading</h3>
+        <p>I enjoy reading in my free time — it's how I explore new ideas and keep learning outside the classroom.</p>
+      </div>
+      <div class="hobby">
+        <p class="hobby-icon">✈️</p>
+        <h3>Travelling</h3>
+        <p>Visiting new places gives me a chance to experience different environments and create new experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="section resume-section">
+    <div class="section-head section-head-center">
+      <span class="tag tag-violet">07</span>
+      <h2>Resume</h2>
+    </div>
+    <p class="resume-text">For a full overview of my qualifications, skills and experience, download my resume below.</p>
+    <a href="assets/Ishini_Gunathilaka_Resume.pdf" class="btn btn-primary btn-large" download>Download Resume (PDF)</a>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact" class="contact">
+    <div class="contact-inner">
+      <h2>Contact Me</h2>
+      <p>I'd be glad to connect with anyone interested in biotechnology, molecular biology or scientific research.</p>
+      <a class="contact-email" href="mailto:ishinigunathilaka2006@gmail.com">ishinigunathilaka2006@gmail.com</a>
+    </div>
+    <p class="footer-note">&copy; 2026 H.P. Ishini Uthkarsha Gunathilaka</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
