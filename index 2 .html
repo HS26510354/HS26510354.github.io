@@ -3,131 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-Portfolio | BSc Biotechnology</title>
+    <title>Ishini Gunathilaka - E-Portfolio</title>
     <style>
+        :root {
+            --primary-color: #0b4f6c;
+            --secondary-color: #01baef;
+            --dark-color: #2b2d42;
+            --light-color: #f8f9fa;
+            --accent-color: #e0fbfc;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         body {
-            font-family: Arial, sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f9f4;
         }
         header {
-            background-color: #2c5e3b;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 30px;
             text-align: center;
-            border-radius: 8px;
-        }
-        section {
-            background: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #2c5e3b;
-            border-bottom: 2px solid #e2e2e2;
-            padding-bottom: 5px;
+            padding: 50px 20px;
         }
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            display: block;
-            margin: 10px auto;
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: white;
+            margin-bottom: 25px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: var(--secondary-color);
         }
         ul {
-            padding-left: 20px;
+            list-style-type: square;
+            margin-left: 20px;
         }
-        .footer {
+        li {
+            margin-bottom: 8px;
+        }
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+        footer {
             text-align: center;
-            margin-top: 30px;
+            padding: 20px;
             color: #666;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Your Name Here</h1>
-        <p>BSc Biotechnology Student</p>
+        <img src="profile.jpg" alt="Ishini Gunathilaka" class="profile-img">
+        <h1>Ishini Gunathilaka</h1>
+        <p>BSc (Hons) in Biotechnology Undergraduate | SLIIT</p>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <!-- ඔබේ ඡායාරූපය පහත රේඛාවෙන් එකතු කළ හැක (profile.jpg වෙනුවට ඔබේ පින්තූරයේ නම දමන්න) -->
-        <img src="profile.jpg" alt="Your Photograph" class="profile-img">
-        <p>Write a short paragraph about yourself here. Describe your academic background, career goals, and passion for biotechnology.</p>
-    </section>
+    <div class="container">
+        
+        <!-- Career Objective -->
+        <section>
+            <h2>Career Objectives</h2>
+            <p>Enthusiastic and detail-oriented first-year Biotechnology undergraduate with foundational knowledge of laboratory safety, molecular biology, and analytical techniques. Possessing strong communication, teamwork, and problem-solving skills, I am seeking an opportunity to gain practical experience as a Trainee Laboratory Assistant while contributing to accurate laboratory operations and continuously developing my professional skills.</p>
+            <br>
+            <a href="Ishini_CV.pdf" target="_blank" download class="btn">Download / View My CV (PDF)</a>
+        </section>
 
-    <section id="education">
-        <h2>Educational Qualifications</h2>
-        <ul>
-            <li><strong>Higher Education:</strong> BSc in Biotechnology, [University Name] ([Year])</li>
-            <li><strong>Secondary Education:</strong> [School Name] ([Year])</li>
-        </ul>
-    </section>
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>BSc (Hons) in Biotechnology</strong> - Sri Lanka Institute of Information Technology (Year 1, Semester 1)[cite: 6].</li>
+                <li><strong>G.C.E. Advanced Level (Bio Stream)</strong> - Biology (C), Chemistry (C), Physics (C)[cite: 6].</li>
+                <li><strong>G.C.E. Ordinary Level</strong> - Passed with 9 Distinctions (A)[cite: 6].</li>
+            </ul>
+        </section>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <p><em>(If there is any, list your roles/internships here. Otherwise, you can state "None" or remove this section)</em></p>
-        <ul>
-            <li><strong>[Job Title/Internship]</strong> - [Company/Institution Name] ([Years])<br>Brief description of your responsibilities.</li>
-        </ul>
-    </section>
+        <!-- Technical and Laboratory Skills -->
+        <section>
+            <h2>Technical & Laboratory Skills</h2>
+            <ul>
+                <li>Basic Autoclave Operation, Spectrophotometry, and Micropipetting[cite: 6].</li>
+                <li>Laboratory Safety Practices: SOP Compliance and Biosafety (BSL-1 / BSL-2)[cite: 6].</li>
+                <li>Microsoft Word, Excel, PowerPoint & Basic Data Formatting[cite: 6].</li>
+            </ul>
+        </section>
 
-    <section id="qualifications">
-        <h2>Other Professional Qualifications</h2>
-        <p><em>(Certificates, workshops, or training programs related to biotechnology or other fields)</em></p>
-        <ul>
-            <li>[Certificate Name] - [Issuing Organization] ([Year])</li>
-        </ul>
-    </section>
+        <!-- Projects & Career Focus -->
+        <section>
+            <h2>Projects Related to Career</h2>
+            <p>Currently developing academic knowledge and practical skills in biotechnology through university studies, digital assignments, and laboratory-related learning[cite: 1, 5].</p>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p><em>(Projects you worked on related to your career or studies)</em></p>
-        <ul>
-            <li><strong>[Project Title]:</strong> Brief description of the project, tools used, and your contribution.</li>
-        </ul>
-    </section>
+        <!-- Extracurricular Activities & Languages -->
+        <section>
+            <h2>Extracurricular Activities & Languages</h2>
+            <ul>
+                <li>Member of University Biotech Club[cite: 6].</li>
+                <li>Member of University Carom Club[cite: 6].</li>
+                <li><strong>Languages:</strong> Sinhala (Native), English (Professional)[cite: 6].</li>
+            </ul>
+        </section>
 
-    <section id="skills">
-        <h2>Other Skills</h2>
-        <ul>
-            <li><strong>Laboratory Skills:</strong> [e.g., Microscopy, Pipetting, PCR, Gel Electrophoresis]</li>
-            <li><strong>Software/IT Skills:</strong> [e.g., MS Office, Data Analysis tools]</li>
-            <li><strong>Languages:</strong> [e.g., English, Sinhala/Tamil]</li>
-        </ul>
-    </section>
+        <!-- Contact Details -->
+        <section class="contact-info">
+            <h2>Contact Details</h2>
+            <p><strong>Address:</strong> Ketawalegedara - Wewagama, Kuliyapitiya, Sri Lanka[cite: 6]</p>
+            <p><strong>Phone:</strong> +94 76 7766930[cite: 6]</p>
+            <p><strong>Email:</strong> ishinigunathilaka2006@gmail.com[cite: 6]</p>
+        </section>
 
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <ul>
-            <li>[e.g., Reading scientific journals, Nature photography, Travelling, Playing sports]</li>
-        </ul>
-    </section>
-
-    <section id="resume">
-        <h2>Download Resume</h2>
-        <p>You can view or download my professional resume version here:</p>
-        <p><a href="your-resume.pdf" target="_blank">📥 Download PDF Resume</a></p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Details</h2>
-        <p><strong>Email:</strong> your-email@domain.com</p>
-        <p><strong>GitHub Profile:</strong> <a href="https://HS26510354.github.io/">https://HS26510354.github.io/</a></p>
-    </section>
-
-    <div class="footer">
-        <p>&copy; 2026 Your Name. All rights reserved.</p>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Ishini Gunathilaka. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
